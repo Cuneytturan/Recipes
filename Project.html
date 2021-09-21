@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tamaq.kz</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/abb44abcbd.js" crossorigin="anonymous"></script>
+	<link href="C:/Users/User/source/repos/WebApplication2/WebApplication2/Content/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="Project.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMj8Xc5_jA0tqVHCoFHCk-2sHt4imItA&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+</head>
+<body onload="load()">
+
+
+	<div class="nav">
+		<label for="toggle">&#9776;</label>
+	</div>
+	<input type="checkbox" id="toggle">
+	<div class="header">
+		<div id="Logo" onclick="window.location.reload()">
+			<img src="chef.svg" width="100px" height="100px">
+		</div>
+
+		<div id="Recipes" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">Recipes</div>
+		<div class="dropdown">
+			<div id="Categories" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)" class="dropbtn">Categories</div>
+			<div class="dropdown-content">
+				<a href="#">Dinner</a>
+				<a href="#">Dessert</a>
+				<a href="#">Soups</a>
+			</div>
+		</div>
+		<div id="About" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">About us</div>
+		<div id="Contacts" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">Contacts</div>
+		<div id="search" class="input-group">
+		  <input type="text" name="search" placeholder="Search...!!" class="form-control input-lg" />
+		  <span class="input-group-btn">
+		    <button type="button" class="btn btn-default btn-lg" ><i class="fa fa-search"></i></button>
+		  </span>
+		</div>
+		<div id="Login" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)"><a href="project_login.html">Login/Sign Up</a></div>
+	</div>
+
+
+
+	<div class="items">
+	<div class="w3-content w3-display-container">
+	  <img class="mySlides" src="salata-yemekcom.jpg" style="width:100%">
+	  <img class="mySlides" src="badem.jpg" style="width:100%">
+	  <img class="mySlides" src="taco.jpg" style="width:100%">
+	  <img class="mySlides" src="cipura.jpg" style="width:100%">
+	  <img class="mySlides" src="chia.jpg" style="width:100%">
+
+	  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+	  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+	</div>
+
+	<div class="fancy"><span>Recipes</span></div>
+
+
+    </div>
+
+    <div class="row">
+		<div class="column">
+			<div class="artboard">
+			<div class="card">
+
+			<div class="card__side card__side--back">
+			<div class="card__cover">
+				<h4 class="card__heading">
+				<span class="card__heading-span">Ingredients</span>
+				</h4>
+			</div>
+			<div class="card__details">
+				<ul>
+				<li>1 tube (13.8 ounces) refrigerated pizza crust</li>
+				<li>1 can (8 ounces) pizza sauce</li>
+				<li>2 cups Seasoned Taco Meat</li>
+				<li>2 medium tomatoes, seeded and chopped</li>
+				<li>2 cups shredded mozzarella cheese</li>
+				<li>Optional: Shredded lettuce and sour cream</li>
+				<li>Unroll pizza dough and place in a 15x10x1-in. baking pan. Spread with pizza sauce; sprinkle with the taco meat, tomatoes and cheese. Bake at 400° until crust is golden brown, 15-20 minutes. Top with shredded lettuce and sour cream if desired.</li>
+				</ul>
+			</div>
+			</div>
+
+			<div class="card__side card__side--front">
+			<div class="card__theme">
+				<div class="card__theme-box">
+				<p class="card__subject">Taco Pizza Squares</p>
+				<p class="card__title">Everyone will come running the minute you take this fun twist on pizza out of the oven. I top convenient refrigerated pizza dough with leftover taco meat, tomatoes and cheese, bringing a full-flavored fiesta to the table in under half an hour.</p>
+				</div>
+			</div>
+			</div>
+
+			</div>
+			</div>
+		</div>
+		<div class="column">
+
+			<div class="artboard">
+			<div class="card">
+
+			<div class="card__side card__side--back">
+				<div class="card__cover" style="background-image: linear-gradient(to top right, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.65)), url('Peppery-Roast-Beef.jpg');">
+				<h4 class="card__heading">
+				<span class="card__heading-span">Ingredients</span>
+				</h4>
+				</div>
+				<div class="card__details">
+				<ul>
+				<li>1 tablespoon olive oil</li>
+				<li>1 tablespoon seasoned pepper</li>
+				<li>2 garlic cloves, minced</li>
+				<li>1/2 teaspoon dried thyme</li>
+				<li>1/4 teaspoon salt</li>
+				<li>1 boneless beef eye round or top round roast (4 to 5 pounds)</li>
+				<li>1 cup sour cream</li>
+				<li>2 tablespoons lemon juice</li>
+				<li>2 tablespoons milk</li>
+				<li>2 tablespoons prepared horseradish</li>
+				<li>1 tablespoon Dijon mustard</li>
+				<li>1/4 teaspoon salt</li>
+				<li>1/8 teaspoon pepper</li>
+				</ul>
+				</div>
+			</div>
+	
+			<div class="card__side card__side--front" style="background-image: url('Peppery-Roast-Beef.jpg');">
+				<div class="card__theme">
+				<div class="card__theme-box">
+				<p class="card__subject">Peppery Roast Beef</p>
+				<p class="card__title">With its spicy coating and creamy horseradish sauce, this tender roast is sure to be the star of any meal, whether it’s a sit-down dinner or serve-yourself potluck.</p>
+				</div>
+				</div>
+			</div>
+
+			</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="artboard">
+			<div class="card">
+
+			<div class="card__side card__side--back">
+			<div class="card__cover" style="background-image: linear-gradient(to top right, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.65)), url('Sausage-Stuffed-Acorn.jpg');">
+				<h4 class="card__heading">
+				<span class="card__heading-span">Ingredients</span>
+				</h4>
+			</div>
+			<div class="card__details">
+				<ul>
+				<li>2 medium acorn squash</li>
+				<li>1 pound bulk spicy pork sausage</li>
+				<li>1/2 cup chopped onion</li>
+				<li>1 cup fresh spinach, finely chopped</li>
+				<li>1/2 cup dried cranberries</li>
+				<li>1-1/2 cups soft bread crumbs</li>
+				<li>1 large egg</li>
+				<li>2 tablespoons 2% milk</li>
+				</ul>
+			</div>
+			</div>
+
+			<div class="card__side card__side--front" style="background-image: url('Sausage-Stuffed-Acorn.jpg');">
+			<div class="card__theme">
+				<div class="card__theme-box">
+				<p class="card__subject">Sausage-Stuffed Acorn Squash</p>
+				<p class="card__title">Acorn squash gets a sweet and savory treatment when stuffed with sausage, onion, spinach and cranberries to make this pretty autumn entree. Cooking the squash in the microwave makes this quick enough for a busy weeknight.</p>
+				</div>
+			</div>
+			</div>
+
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column">
+			<div class="artboard">
+			<div class="card">
+
+			<div class="card__side card__side--back">
+			<div class="card__cover" style="background-image: url('Cranberry-Orange-Rugelach.jpg');">
+				<h4 class="card__heading">
+				<span class="card__heading-span">Ingredients</span>
+				</h4>
+			</div>
+			<div class="card__details">
+				<ul>
+				<li>1 cup butter, softened</li>
+				<li>1 package (8 ounces) cream cheese, softened</li>
+				<li>1/2 cup sugar</li>
+				<li>2 large egg yolks, room temperature</li>
+				<li>1/2 teaspoon orange extract</li>
+				<li>1/2 teaspoon vanilla extract</li>
+				<li>2-1/2 cups all-purpose flour</li>
+				<li>2 packages (5 ounces each) dried cranberries</li>
+				<li>1-1/2 cups golden raisins</li>
+				</ul>
+			</div>
+			</div>
+
+			<div class="card__side card__side--front" style="background-image: url('Cranberry-Orange-Rugelach.jpg');">
+			<div class="card__theme">
+				<div class="card__theme-box">
+				<p class="card__subject">Cranberry Orange Rugelach</p>
+				<p class="card__title">A hint of cranberry and a splash of orange are wrapped in buttery cookie, then drizzled in chocolate. Can you say, "heaven?" A platter of these showstopping treats makes any event a celebration.</p>
+				</div>
+			</div>
+			</div>
+
+			</div>
+			</div>
+		</div>
+		<div class="column">
+
+			<div class="artboard">
+			<div class="card">
+
+			<div class="card__side card__side--back">
+				<div class="card__cover" style="background-image: linear-gradient(to top right, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.65)), url('Spiced-Pomegranate-Pear-Cake.jpg');">
+				<h4 class="card__heading">
+				<span class="card__heading-span">Ingredients</span>
+				</h4>
+				</div>
+				<div class="card__details">
+				<ul>
+				<li>1-1/2 cups pomegranate juice</li>
+				<li>3 tablespoons brown sugar</li>
+				<li>1 teaspoon ground ginger</li>
+				<li>1 teaspoon vanilla extract</li>
+				<li>1 can (29 ounces) pear halves in juice, drained and cut into 1/8-inch slices</li>
+				<li>3/4 cup 2% milk</li>
+				<li>1 teaspoon white vinegar</li>
+				<li>10 tablespoons butter, softened</li>
+				<li>1-1/4 cups sugar</li>
+				<li>4 large eggs, room temperature</li>
+				<li>2 teaspoons vanilla extract</li>
+				<li>2 cups cake flour</li>
+				<li>2 teaspoons baking powder</li>
+				</ul>
+				</div>
+			</div>
+	
+			<div class="card__side card__side--front" style="background-image: url('Spiced-Pomegranate-Pear-Cake.jpg');">
+				<div class="card__theme">
+				<div class="card__theme-box">
+				<p class="card__subject">Spiced Pomegranate-Pear Cake</p>
+				<p class="card__title">This special-occasion pomegranate cake is a delicious combination of tender cake, tart fruit and rich buttercream. It is also beautiful and stays moist for days.</p>
+				</div>
+				</div>
+			</div>
+
+			</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="artboard">
+			<div class="card">
+
+			<div class="card__side card__side--back">
+			<div class="card__cover" style="background-image: linear-gradient(to top right, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.65)), url('Red-Velvet-Cake-in-a-Jar.jpg');">
+				<h4 class="card__heading">
+				<span class="card__heading-span">Ingredients</span>
+				</h4>
+			</div>
+			<div class="card__details">
+				<ul>
+				<li>2 medium acorn squash</li>
+				<li>1 pound bulk spicy pork sausage</li>
+				<li>1/2 cup chopped onion</li>
+				<li>1 cup fresh spinach, finely chopped</li>
+				<li>1/2 cup dried cranberries</li>
+				<li>1-1/2 cups soft bread crumbs</li>
+				<li>1 large egg</li>
+				<li>2 tablespoons 2% milk</li>
+				</ul>
+			</div>
+			</div>
+
+			<div class="card__side card__side--front" style="background-image: url('Red-Velvet-Cake-in-a-Jar.jpg');">
+			<div class="card__theme">
+				<div class="card__theme-box">
+				<p class="card__subject">Red Velvet Jar Cake</p>
+				<p class="card__title">I love to make these red velvet jar cakes for friends, family and teachers. Red velvet is my favorite during the holidays, but you can use your favorite cake and frosting flavors.</p>
+				</div>
+			</div>
+			</div>
+
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<footer style="margin-top: 10rem;">
+		<div class="row">
+			<div class="column">
+				<h1 style="margin-right: 200px; margin-left: 350px; margin-bottom: 50px; margin-top: 50px;">Our little cafe</h1>
+				<div class="maps">
+					<div id="map"></div>
+				</div>
+				<p style="margin-right: 200px; margin-left: 350px; margin-top: 50px;">mkr. akkent 28/Almaty Kazakhstan</p>
+				<p style="margin-right: 200px; margin-left: 350px; margin-top: 50px;">+7(708) 699 80 91</p>
+			
+				<script>
+					let map;
+			
+					function initMap() {
+						var options = {
+						center: { lat: 43.245122, lng: 76.814813 },
+						zoom: 8
+						}
+			
+						var map = new google.maps.Map(document.getElementById("map"), options);
+			
+						var icon1 = {
+							url: "https://banner2.cleanpng.com/20180502/qgq/kisspng-computer-icons-online-shopping-e-commerce-retail-store-icon-5aea5af37f4476.4302633215253081475213.jpg",
+							scaledSize: new google.maps.Size(20,20),
+							origin: new google.maps.Point(0,0),
+							anchor: new google.maps.Point(0,0),
+						}
+						var icon2 = {
+							url: "https://img.icons8.com/cotton/452/shopping.png",
+							scaledSize: new google.maps.Size(20,20),
+							origin: new google.maps.Point(0,0),
+							anchor: new google.maps.Point(0,0),
+						}
+						var icon3 = {
+							url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGpBEwwn7m4YjS6IEZyEn4lQ_t2ubNus55Rg&usqp=CAU",
+							scaledSize: new google.maps.Size(20,20),
+							origin: new google.maps.Point(0,0),
+							anchor: new google.maps.Point(0,0),
+						}
+			
+						var marker1 = new google.maps.Marker({
+							position: { lat: 43.245122, lng: 76.814813 },
+							map: map,
+							icon: icon1,
+							title: "Tamaq (Almaty)",
+						});
+						var marker2 = new google.maps.Marker({
+							position: { lat: 43.242342, lng: 76.825649 },
+							map: map,
+							icon: icon2,
+						});
+						var marker3 = new google.maps.Marker({
+							position: { lat: 43.238918, lng: 76.819478 },
+							map: map,
+							icon: icon3,
+						});
+			
+						var contentString =
+						'<div id="content">' +
+						'<div id="siteNotice">' +
+						"</div>" +
+						'<h1 id="firstHeading" class="firstHeading">Coffefee</h1>' +
+						'<div id="bodyContent">' +
+						"<p><b>Coffefee</b>, Welcome to our coffee shop, it's our main shop if you would like to come, you're welcome. </p>" +
+						"</div>" +
+						"</div>";
+						var infowindow = new google.maps.InfoWindow({
+						content: contentString,
+						});
+			
+						marker1.addListener("click", () => {
+						infowindow.open(map, marker1);
+						});
+			
+						var contentString =
+						'<div id="content">' +
+						'<div id="siteNotice">' +
+						"</div>" +
+						'<h1 id="firstHeading" class="firstHeading">Coffefee</h1>' +
+						'<div id="bodyContent">' +
+						"<p><b>Coffefee</b>, Welcome to our coffee shop, it's our secondary shop if you would like to come, you're welcome. </p>" +
+						"</div>" +
+						"</div>";
+						var infowindow = new google.maps.InfoWindow({
+						content: contentString,
+						});
+			
+						marker2.addListener("click", () => {
+						infowindow.open(map, marker2);
+						});
+			
+						var contentString =
+						'<div id="content">' +
+						'<div id="siteNotice">' +
+						"</div>" +
+						'<h1 id="firstHeading" class="firstHeading">Coffefee</h1>' +
+						'<div id="bodyContent">' +
+						"<p><b>Coffefee</b>, Welcome to our coffee shop, it's our secondary shop if you would like to come, you're welcome. </p>" +
+						"</div>" +
+						"</div>";
+						var infowindow = new google.maps.InfoWindow({
+						content: contentString,
+						});
+			
+						marker3.addListener("click", () => {
+						infowindow.open(map, marker3);
+						});
+			
+						var roadPathCoord = [
+						{ lat: 43.245122, lng: 76.814813 },
+						{ lat: 43.245076, lng: 76.814975 },
+						{ lat: 43.244368, lng: 76.815430 },
+						{ lat: 43.244495, lng: 76.815984 },
+						{ lat: 43.242081, lng: 76.817071 },
+						{ lat: 43.242490, lng: 76.819241 },
+						{ lat: 43.241418, lng: 76.819688 },
+						{ lat: 43.240688, lng: 76.816259 },
+						{ lat: 43.240191, lng: 76.813703 },
+						{ lat: 43.239931, lng: 76.813687 },
+						{ lat: 43.239771, lng: 76.814029 },
+						{ lat: 43.240489, lng: 76.816426 },
+						{ lat: 43.242849, lng: 76.826178 },
+						{ lat: 43.242164, lng: 76.826618 },
+						{ lat: 43.242009, lng: 76.826003 },
+						{ lat: 43.242294, lng: 76.825887 },
+						{ lat: 43.242278, lng: 76.825672 },
+						];
+			
+						var roadPath = new google.maps.Polyline({
+							path: roadPathCoord,
+							geodesic: true,
+							strokeColor: "#FF0000",
+							strokeOpacity: 1.0,
+							strokeWeight: 3,
+						});
+						roadPath.setMap(map);
+			
+						}
+				</script>
+			</div>
+
+			<div class="column">
+				<h1 style="margin-bottom: 50px; margin-top: 50px;">Contact Us</h1>
+				<p style="margin-bottom: 50px; margin-top: 50px; font-size: 24px;">If you are interested in working with us or just want to say hello dimply drop us a line</p>
+				<a href="cuneytturan30@gmail.com">cuneytturan30@gmail.com</a>
+			</div>
+
+			<div class="column">
+				<h1>Subscribe Us</h1>
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-youtube"></a>
+				<a href="#" class="fa fa-instagram"></a>
+				<a href="#" class="fa fa-pinterest"></a>
+				<div class="input-field" style="margin-bottom: 50px; margin-top: 50px;">
+					<i class="fas fa-user"></i>
+					<input type="text" placeholder="Your email">
+					<input type="submit" value="Submit" class="btn solid" style="
+						width: 150px;
+						height: 49px;
+						border: none;
+						outline: none;
+						border-radius: 49px;
+						cursor: pointer;
+						background-color: #B4C0D8;
+						color: #fff;
+						text-transform: uppercase;
+						font-weight: 600;
+						margin: 10px 0;
+						transition: 1s;">
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+	<script type="text/javascript" src="Project.js"></script>
+
+</body>
+</html>
